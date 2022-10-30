@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "937532406737",
+    "project_id": "stalwart-bliss-314606",
+    "storage_bucket": "stalwart-bliss-314606.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937532406737:android:75a6e9cd2d6b40ac7dfef0",
+        "android_client_info": {
+          "package_name": "com.firebaseproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937532406737-3dqt1rt86ade9n16t76jf5v9upmaplpd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebaseproject",
+            "certificate_hash": "89e254a0624f3846b43674629fd604d89064fd18"
+          }
+        },
+        {
+          "client_id": "937532406737-t88p6tuoiplkoc2rla8f5fqbruk5a04s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9XYC66CFk0OSPiQyskujp2G-eNMD5JgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937532406737-5p3flkelfa0c39rc08q9msjb1ucunsq0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "937532406737-d061cd6jegu0ho2n2umpieu9h4qptchs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "m4drive.FirebaseProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,18 @@
+use_frameworks! :linkage => :static
+# Convert all permission pods into static libraries
+pre_install do |installer|
+  Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+
+  installer.pod_targets.each do |pod|
+    if pod.name.eql?('RNPermissions') || pod.name.start_with?('Permission-')
+      def pod.build_type;
+        # Uncomment the line corresponding to your CocoaPods version
+         Pod::BuildType.static_library # >= 1.9
+        # Pod::Target::BuildType.static_library # < 1.9
+      end
+    end
+  end
+end
 $RNFirebaseAsStaticFramework = true
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
@@ -5,9 +20,18 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '12.4'
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'FirebaseProject' do
-  use_frameworks! :linkage => :static
+target 'SensorHAR' do
+  pod 'TensorFlowLiteSwift','2.6.0'#,'~> 0.0.1-nightly'
+  pod 'TensorFlowLiteSelectTfOps','2.6.0' #'~> 0.0.1-nightly' #'2.10.0'
+#  permissions_path = '../node_modules/react-native-permissions/ios'
+#  pod 'Permission-LocationAccuracy', :path => "#{permissions_path}/LocationAccuracy"
+#  pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways"
+#  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
+  #use_frameworks! :linkage => :static
   config = use_native_modules!
+  
+  # Pods for test_google_signin
+#    pod 'GoogleSignIn', '~> 6.1.0'
 
   # Flags change depending on the env values.
   flags = get_default_flags()
@@ -28,7 +52,7 @@ target 'FirebaseProject' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'FirebaseProjectTests' do
+  target 'SensorHARTests' do
     inherit! :complete
     # Pods for testing
   end

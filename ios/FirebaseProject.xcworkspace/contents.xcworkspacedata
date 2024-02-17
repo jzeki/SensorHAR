@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:FirebaseProject.xcodeproj">
+      location = "group:/Users/zeki/apps/ReactNative/DogFoodProject/ios/DogFoodProject.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -1,7 +1,7 @@
 React Native Project for HAR(Human activity Recognition).
 -Android React Native
 -iOS React Native
-- Embedded Tensor FlowLite  in both projects.
+- Embedded TensorFlowLite  in both projects.
 - LSTM neural networks trained model usin motion sensor data.
 
 Android&iOS

@@ -8,18 +8,17 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import sensor.RotationVectorSensor;
-import sensor.SensorSample;
+import data.SensorSample;
 
 public class RotationVectorSensorLiveData extends LiveData<SensorSample> {
-    private RotationVectorSensor sensor;
+    private final RotationVectorSensor sensor;
     private CompositeDisposable compositeDisposable;
-    private Context context;
+    private final Context context;
     public RotationVectorSensorLiveData(Context context) {
         this.context = context;
         //this.sensor = new SensorListener(context);
         this.sensor = new RotationVectorSensor(context);
     }
-
     @Override
     protected void onActive() {
         this.compositeDisposable = new CompositeDisposable();
@@ -28,7 +27,6 @@ public class RotationVectorSensorLiveData extends LiveData<SensorSample> {
             public void onSubscribe(Disposable d) {
                 compositeDisposable.add(d);
             }
-
             @Override
             public void onNext(SensorSample values) {
 //                if(averagingFilter != null) {
@@ -37,12 +35,12 @@ public class RotationVectorSensorLiveData extends LiveData<SensorSample> {
                 setValue(values);
 //                }
             }
-
             @Override
-            public void onError(Throwable e) {}
-
+            public void onError(Throwable e) {
+            }
             @Override
-            public void onComplete() {}
+            public void onComplete() {
+            }
         });
         this.sensor.onStart();
     }
@@ -51,6 +49,5 @@ public class RotationVectorSensorLiveData extends LiveData<SensorSample> {
         this.compositeDisposable.dispose();
         this.sensor.onStop();
     }
-
 
 }

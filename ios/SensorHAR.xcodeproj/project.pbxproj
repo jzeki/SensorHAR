@@ -13,11 +13,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B504E6E02928D44F00ACD085 /* ReflectedStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504E6DF2928D44E00ACD085 /* ReflectedStringConvertible.swift */; };
-		B5118C2F290B0E92001A0C78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5118C2E290B0E92001A0C78 /* GoogleService-Info.plist */; };
 		B5118C54291505C2001A0C78 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = B5118C53291505C1001A0C78 /* fonts */; };
 		B56955B8292201AA00C7BD22 /* SensorsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56955B7292201AA00C7BD22 /* SensorsSample.swift */; };
-		B56955C02922024100C7BD22 /* SensorDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56955BF2922024100C7BD22 /* SensorDataStorage.swift */; };
-		B56955C22922025C00C7BD22 /* SensorDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56955C12922025C00C7BD22 /* SensorDataType.swift */; };
 		B56955CB2922039B00C7BD22 /* Datem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56955CA2922039B00C7BD22 /* Datem.swift */; };
 		B56955E329220CE300C7BD22 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56955E229220CE200C7BD22 /* MotionManager.swift */; };
 		B56955E529220F6800C7BD22 /* AccelerationSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56955E429220F6800C7BD22 /* AccelerationSensor.swift */; };
@@ -59,20 +56,13 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FirebaseProject/main.m; sourceTree = "<group>"; };
 		2B8A617E448DE7FEF90FB307 /* Pods-SensorHAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensorHAR.release.xcconfig"; path = "Target Support Files/Pods-SensorHAR/Pods-SensorHAR.release.xcconfig"; sourceTree = "<group>"; };
 		4BB8DAA1E77164E4BFD88C57 /* Pods-SensorHAR-SensorHARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensorHAR-SensorHARTests.release.xcconfig"; path = "Target Support Files/Pods-SensorHAR-SensorHARTests/Pods-SensorHAR-SensorHARTests.release.xcconfig"; sourceTree = "<group>"; };
-		64167CAE1EF005A275124EF3 /* Pods-DogFoodProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogFoodProject.release.xcconfig"; path = "Target Support Files/Pods-DogFoodProject/Pods-DogFoodProject.release.xcconfig"; sourceTree = "<group>"; };
-		7102C7E32C5262F33A6CDF6F /* Pods-SensorHAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensorHAR.debug.xcconfig"; path = "Target Support Files/Pods-SensorHAR/Pods-SensorHAR.debug.xcconfig"; sourceTree = "<group>"; };
-		7C67B1D255876CDB13509926 /* Pods-DogFoodProject-DogFoodProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogFoodProject-DogFoodProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-DogFoodProject-DogFoodProjectTests/Pods-DogFoodProject-DogFoodProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FirebaseProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841FA37E3E4EAAC511173B95 /* Pods_SensorHAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SensorHAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CF1B9FD9A7C56FE74B1F85 /* Pods-SensorHAR-SensorHARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensorHAR-SensorHARTests.debug.xcconfig"; path = "Target Support Files/Pods-SensorHAR-SensorHARTests/Pods-SensorHAR-SensorHARTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9949E3DC0BDF9C7E0873C6C7 /* Pods-DogFoodProject-DogFoodProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogFoodProject-DogFoodProjectTests.release.xcconfig"; path = "Target Support Files/Pods-DogFoodProject-DogFoodProjectTests/Pods-DogFoodProject-DogFoodProjectTests.release.xcconfig"; sourceTree = "<group>"; };
-		ACD4257BF72F27387EECA149 /* Pods-DogFoodProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogFoodProject.debug.xcconfig"; path = "Target Support Files/Pods-DogFoodProject/Pods-DogFoodProject.debug.xcconfig"; sourceTree = "<group>"; };
 		B504E6DF2928D44E00ACD085 /* ReflectedStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectedStringConvertible.swift; sourceTree = "<group>"; };
-		B5118C2E290B0E92001A0C78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5118C53291505C1001A0C78 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		B51C9EFB2B826C1A00820F6B /* Pods-SensorHAR.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Target Support Files/Pods-SensorHAR/Pods-SensorHAR.debug.xcconfig"; sourceTree = "<group>"; };
 		B56955B7292201AA00C7BD22 /* SensorsSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsSample.swift; sourceTree = "<group>"; };
-		B56955BF2922024100C7BD22 /* SensorDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataStorage.swift; sourceTree = "<group>"; };
-		B56955C12922025C00C7BD22 /* SensorDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataType.swift; sourceTree = "<group>"; };
 		B56955CA2922039B00C7BD22 /* Datem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datem.swift; sourceTree = "<group>"; };
 		B56955E229220CE200C7BD22 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		B56955E429220F6800C7BD22 /* AccelerationSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerationSensor.swift; sourceTree = "<group>"; };
@@ -133,12 +123,12 @@
 		13B07FAE1A68108700A75B9A /* SensorHAR */ = {
 			isa = PBXGroup;
 			children = (
+				B51C9EFA2B82677C00820F6B /* data */,
 				B59C87602B7BB9FB007E3FED /* sensors */,
 				B59C875D2B7BB965007E3FED /* services */,
 				B59C875C2B7BB8B2007E3FED /* ml */,
 				B59C875B2B7BB8A4007E3FED /* SensorHAR-Bridging-Header.h */,
 				B56955C72922035C00C7BD22 /* help */,
-				B56955B62922017F00C7BD22 /* common */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -170,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				B5118C53291505C1001A0C78 /* fonts */,
-				B5118C2E290B0E92001A0C78 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* SensorHAR */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* SensorHARTests */,
@@ -192,16 +181,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B56955B62922017F00C7BD22 /* common */ = {
+		B51C9EFA2B82677C00820F6B /* data */ = {
 			isa = PBXGroup;
 			children = (
-				B56955B7292201AA00C7BD22 /* SensorsSample.swift */,
-				B56955BF2922024100C7BD22 /* SensorDataStorage.swift */,
-				B56955C12922025C00C7BD22 /* SensorDataType.swift */,
-				B56955EE29222CD600C7BD22 /* SensorSample.swift */,
 				B56955F42922A5C200C7BD22 /* SensorType.swift */,
+				B56955EE29222CD600C7BD22 /* SensorSample.swift */,
+				B56955B7292201AA00C7BD22 /* SensorsSample.swift */,
 			);
-			path = common;
+			path = data;
 			sourceTree = "<group>";
 		};
 		B56955C72922035C00C7BD22 /* help */ = {
@@ -249,12 +236,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ACD4257BF72F27387EECA149 /* Pods-DogFoodProject.debug.xcconfig */,
-				64167CAE1EF005A275124EF3 /* Pods-DogFoodProject.release.xcconfig */,
-				7C67B1D255876CDB13509926 /* Pods-DogFoodProject-DogFoodProjectTests.debug.xcconfig */,
-				9949E3DC0BDF9C7E0873C6C7 /* Pods-DogFoodProject-DogFoodProjectTests.release.xcconfig */,
-				7102C7E32C5262F33A6CDF6F /* Pods-SensorHAR.debug.xcconfig */,
 				2B8A617E448DE7FEF90FB307 /* Pods-SensorHAR.release.xcconfig */,
+				B51C9EFB2B826C1A00820F6B /* Pods-SensorHAR.debug.xcconfig */,
 				94CF1B9FD9A7C56FE74B1F85 /* Pods-SensorHAR-SensorHARTests.debug.xcconfig */,
 				4BB8DAA1E77164E4BFD88C57 /* Pods-SensorHAR-SensorHARTests.release.xcconfig */,
 			);
@@ -359,7 +342,6 @@
 				B59C87582B7B5F74007E3FED /* linear.tflite in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				B5118C2F290B0E92001A0C78 /* GoogleService-Info.plist in Resources */,
 				B5118C54291505C2001A0C78 /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,11 +514,9 @@
 				B56955ED29222BAD00C7BD22 /* OrientationSensor.swift in Sources */,
 				B56955E329220CE300C7BD22 /* MotionManager.swift in Sources */,
 				B59C87562B7B5E2D007E3FED /* InterpreterStorage.swift in Sources */,
-				B56955C22922025C00C7BD22 /* SensorDataType.swift in Sources */,
 				B56955B8292201AA00C7BD22 /* SensorsSample.swift in Sources */,
 				B56955E72922146400C7BD22 /* SensorService.swift in Sources */,
 				B56955F12922445700C7BD22 /* Sensor.swift in Sources */,
-				B56955C02922024100C7BD22 /* SensorDataStorage.swift in Sources */,
 				B56955EF29222CD600C7BD22 /* SensorSample.swift in Sources */,
 				B56955FE29234FA500C7BD22 /* UIService.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
@@ -620,7 +600,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7102C7E32C5262F33A6CDF6F /* Pods-SensorHAR.debug.xcconfig */;
+			baseConfigurationReference = B51C9EFB2B826C1A00820F6B /* Pods-SensorHAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

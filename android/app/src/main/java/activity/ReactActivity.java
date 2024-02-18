@@ -3,11 +3,11 @@ package activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.KeyEvent;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactPackage;
@@ -24,27 +24,17 @@ import java.util.List;
 import model.InterpreterStorage;
 import services.SensorService;
 
-import viewmodel.SensorViewModel;
-
-
 public class ReactActivity extends AppCompatActivity implements DefaultHardwareBackBtnHandler {
     private ReactRootView mReactRootView;
-    InterpreterStorage interpreter;
     private ReactInstanceManager mReactInstanceManager;
-    private DevicePackage pkg = new DevicePackage();
-    SensorViewModel model;
-
+    private final DevicePackage pkg = new DevicePackage();
     private ReactActivityDelegate mDelegate;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         SoLoader.init(this, false);
-
         mReactRootView = new ReactRootView(this);
-
         List<ReactPackage> packages = getPackages();
-
         mReactInstanceManager = ReactInstanceManager.builder()
                 .setApplication(getApplication())
                 .setCurrentActivity(this)
@@ -55,10 +45,7 @@ public class ReactActivity extends AppCompatActivity implements DefaultHardwareB
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
         mReactRootView.startReactApplication(mReactInstanceManager, "SensorHAR", null);
-
         setContentView(mReactRootView);
-        ActivityHolder.setCtx(this);
-
         mDelegate = createReactActivityDelegate();
         //this.startService(new Intent(this, SensorService.class));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -66,10 +53,8 @@ public class ReactActivity extends AppCompatActivity implements DefaultHardwareB
         } else {
             startService(new Intent(this, SensorService.class));
         }
-
         InterpreterStorage.getInstance().setContext(this);
     }
-
     /**
      * Called at construction time, override if you have a custom delegate implementation.
      */
@@ -84,15 +69,12 @@ public class ReactActivity extends AppCompatActivity implements DefaultHardwareB
     protected @Nullable String getMainComponentName() {
         return null;
     }
-
-
-
     // @Override
     protected List<ReactPackage> getPackages() {
-        return Arrays.<ReactPackage>asList(
+        return Arrays.asList(
                 new MainReactPackage(),
                 pkg
-     );
+        );
     }
     @Override
     public void invokeDefaultOnBackPressed() {
@@ -101,12 +83,10 @@ public class ReactActivity extends AppCompatActivity implements DefaultHardwareB
     @Override
     protected void onPause() {
         super.onPause();
-
         if (mReactInstanceManager != null) {
             mReactInstanceManager.onHostPause(this);
         }
     }
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -115,11 +95,9 @@ public class ReactActivity extends AppCompatActivity implements DefaultHardwareB
             mReactInstanceManager.onHostResume(this, this);
         }
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
         if (mReactInstanceManager != null) {
             mReactInstanceManager.onHostDestroy(this);
         }

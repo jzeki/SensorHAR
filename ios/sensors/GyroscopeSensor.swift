@@ -36,11 +36,6 @@ class GyroscopeSensor:Sensor{
             self?.sensorSample.z = Float(data.rotationRate.z)
             self?.sensorSample.t = Date().millisecondsSince1970
             
-            //self?.sensorSample.t = Double(Date().millisecondsSince1970)
-            
-            //self?.sensorSample.f = self!.calculateSensorFrequency()
-            
-            //SensorDataStorage.sharedInstance.Time = Date().millisecondsSince1970
             self?.service.receiveUpdate(sensorSample:self!.sensorSample, type:SensorType.gyroscope)
           }
         }
@@ -61,12 +56,7 @@ class GyroscopeSensor:Sensor{
 
          var  timestamp = Double(Date().millisecondsSince1970)
 
-         // Find the sample period (between updates) and convert from
-         // nanoseconds to seconds. Note that the sensor delivery rates can
-         // individually vary by a relatively large time frame, so we use an
-         // averaging technique with the number of sensor updates to
-         // determine the delivery rate.
-    count+=1
+        count+=1
          return (timestamp - startTime) == 0 ? 0:(Double(count) / ((timestamp - startTime) / Double(1000)));
      }
 

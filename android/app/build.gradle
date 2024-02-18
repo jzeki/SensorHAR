@@ -252,46 +252,19 @@ android {
 
 
 dependencies {
-    // implementation project(path: ':roadshero')
-    //implementation fileTree(dir: "libs", include: ["*.jar"])
-    //implementation 'androidx.multidex:multidex:2.0.1'
-    //implementation 'androidx.appcompat:appcompat:1.5.1'
-    //implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    //testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    //implementation "com.android.support:appcompat-v7:27.1.1"
-    //implementation "com.facebook.react:react-native:+" // From node_modules
-   // implementation "com.facebook.react:react-native:0.70.1"
     implementation "org.webkit:android-jsc:+"
-
-
     implementation 'androidx.lifecycle:lifecycle-runtime:2.0.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
-
     annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.0.0'
-    //implementation project(':react-native-vector-icons')
-    //implementation project(':react-native-gesture-handler')
 
-
-
-    implementation 'androidx.multidex:multidex:2.0.1'  // <-- ADD THIS DEPENDENCY
-    //implementation(project(":react-native-community_google-signin")) // <--- add this dependency
-    //implementation 'com.google.android.gms:play-services-auth:20.3.0'
-    //implementation platform('com.google.firebase:firebase-bom:31.0.1')
-    //implementation 'com.google.firebase:firebase-auth'
-    //noinspection GradleDynamicVersion
-    implementation "com.facebook.react:react-native:0.70.1"  // From node_modules
-
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation "com.facebook.react:react-native:0.70.1"
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
-    //implementation(project(":react-native-google-signin_google-signin"))
-    //implementation project(':react-native-permissions')
-    //implementation project(":react-native-google-signin") // <--- add this
-
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0' // <-- add this; newer versions should work too
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     implementation 'org.tensorflow:tensorflow-lite:2.10.0'
-    //implementation 'com.google.firebase:firebase-ml-modeldownloader'
     implementation 'org.tensorflow:tensorflow-lite-select-tf-ops:2.10.0'
     implementation "com.google.android.gms:play-services-location:17.0.0"
 
@@ -305,14 +278,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-//implementation project(path: ":@react-native-firebase_functions")
-    //implementation(project(":react-native-google-signin/google-signin"))
-    //react-native-google-signin/google-signin
-
-    //implementation project(':react-native-secure-storage')
-    //implementation project(':react-native-vector-icons')
-    //implementation project(':react-native-gesture-handler')
-    //implementation project(path: ':roadshero')
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
     }

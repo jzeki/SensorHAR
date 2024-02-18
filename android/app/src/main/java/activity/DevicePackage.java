@@ -1,6 +1,7 @@
 package activity;
 
 import android.content.Context;
+
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -17,17 +18,14 @@ public class DevicePackage implements ReactPackage {
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
-
     @Override
     public List<NativeModule> createNativeModules(
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
         //We import the module file here
-        module =new DeviceModule(reactContext);
+        module = new DeviceModule(reactContext);
         modules.add(module);
-
         return modules;
     }
-
 
 }
